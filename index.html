@@ -1,0 +1,757 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/Content/images/favicon.ico">
+    <title>Menu exemplo</title>
+    <link rel="stylesheet" type="text/css" href="/Content/css/opensans.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/raleway.css">
+    <link rel="stylesheet" type="text/css" href="/Content/js/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Content/js/jquery.gritter/css/jquery.gritter.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/Content/js/jquery.nanoscroller/nanoscroller.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/Submenu.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/notificacoes/notificador-template.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/jqs.css">
+</head>
+
+<body class="animated cbp-spmenu-push">
+
+    <div id="cl-wrapper" class="" style="opacity: 1; margin-left: 0px;">
+        <div class="cl-sidebar">
+            <div class="cl-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="cl-navblock">
+                <div class="menu-space">
+                    <div class="content">
+                        <a href="/Home/Index">
+                            <div class="sidebar-logo">
+                                <div class="logo">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="side-user">
+                            <input id="search-menu" type="text" class="form-control search" placeholder="Buscar...">
+                        </div>
+                        <ul class="cl-vnavigation" id="main-menu">
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-truck"></i>
+                                    <span>Puxada</span>
+                                </a>
+                                <ul class="sub-menu" style="display: none;">
+
+                                    <li>
+                                        <a href="/app#/entrada/puxada/ordem-compra">Puxada</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Receipt/PurchaseOrderManual">Ordem Manual de Puxada</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Receipt/OrderReceipt">Histórico</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Receipt/OcorrenciaPuxada">Anomalias</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Fabrica/Bloqueio">Bloqueios</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/entrada/puxada/conferencia">Rastreabilidade - Puxada</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-truck"></i>
+                                    <span>Retorno de rota</span>
+                                </a>
+                                <ul class="sub-menu" style="display: none;">
+
+                                    <li>
+                                        <a href="/Receipt/PCFOrder">Prestação de Conta Física</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Receipt/PCFOrder2">Prestação de Conta Física (Beta)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-barcode"></i>
+                                    <span>Inventário</span>
+                                </a>
+                                <ul class="sub-menu" style="display: none;">
+
+                                    <li>
+                                        <a href="/Inventory/ItemStockInventory">Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Inventory/ItemStockInventoryByLpn">Palete</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Inventory/ItemStockInventoryByProductClass">Classe</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Inventory/ItemStockInventoryByProductFamily">Família</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Inventory/ItemStockHoldInventory">Bloqueado / Danificado</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/Inventory/StockRevision">Revisão de Estoque</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Inventory/LancamentoDeOcorrencias">Lançamento de Ocorrências</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/Fabrica/Bloqueio">Bloqueios</a>
+                                    </li>
+                                    <li class="parent">
+                                        <a href="javascript:;">
+                                            <span>Contagem</span>
+                                        </a>
+                                        <ul class="sub-menu" style="display: none;">
+                                            <li>
+                                                <a href="/Settings/ContagemEstoque">Agendamentos da Contagem de Estoque</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/relatorio-inconsistencias-contagem">Relatório de contagem</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/configuracoes/contagem-estoque">Configuracoes da Contagem de Estoque</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/contagem">Alteração de contagem</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="parent">
+                                        <a href="javascript:;">
+                                            <span>Gestão de Idade</span>
+                                        </a>
+                                        <ul class="sub-menu" style="display: none;">
+                                            <li>
+                                                <a href="/app#/inventario/gestao-idade">Param. Gestão de Idade</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/gestao-idade/idade">Idade</a>
+                                            </li>
+                                            <li>
+                                                <a href="/Inventory/ItemColetaIdadeNovo">Coleta de idade</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/gestao-idade/configuracao-gestao-idade">Configurações da gestão idade</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="parent">
+                                        <a href="javascript:;">
+                                            <span>Armazenagem</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="/app#/inventario/configuracoes/armazenagem">Configuracoes da Armazenagem</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/armazenagem/regras-armazenagem">Regras Armazenagem</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/armazenagem/historico-armazenagem">Histórico Execução Armazenagem</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/armazenagem/ocorrencias/quebra-fefo">Ocorrências Armazenagem Temporária</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="parent">
+                                        <a href="javascript:;">
+                                            <span>Ressuprimento</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="/app#/inventario/ressuprimento/configuracao">Configurações de Ressuprimento</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/ressuprimento/relatorio-tarefas">Relatório de ressuprimento</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/inventario/configuracao-layout">Configuração Layout</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="parent">
+                                        <a href="javascript:;">
+                                            <span>Repack</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="/app#/repack/relatorio-descarte">Relatorio Descarte</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <a href="#1">
+                                    <i class="fa  fa-group"></i>
+                                    <span>Fila de Trabalho</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="/WorkQueues/TaskManager">Gerenciador de Tarefas</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-signal"></i>
+                                    <span>Task Interleaving</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="/PlanejamentoTarefas/Acompanhamento">Simulação por Usuário</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/PlanejamentoTarefas/Historico">Histórico Tarefas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Rastreabilidade/Tarefas">Rastreabilidade das tarefas executadas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/PlanejamentoTarefas/ConfiguracoesTaskInterleaving/Read">Cadastro de Configurações</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-signal"></i>
+                                    <span>Indicadores</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="/app#/saida/separacao/tempo-separacao-por-palete">Tempos de Separação por Palete</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/saida/separacao/tempo-separacao-por-item">Tempos de Separação por Item</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/Management/UserPallet">Total Paletes por Usuário</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Management/TempMap">Produtividade por Mapa</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Management/DashBoard">Dashboard - Carregamento</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa  fa-th"></i>
+                                    <span>Separação </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="/Management/ReleaseLoads">Liberação de Cargas / Mapas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/saida/cargas">Cargas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/saida/paletes">Paletes</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Management/ReleaseLoads/PickOrder">Associar / Priorizar Mapas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/TouchPicking/PickMaster">Ordens de Separação por palete</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/saida/separacao/detalhe-seperacao">Detalhes da Separação</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/app#/saida/separacao/cancelamento-mapas">Cancelamento de Mapas</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/app#/saida/separacao/historico-cancelamento-mapas">Histórico de Cancelamentos de Mapas</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/TouchPicking/PickDetailImport">Importar Mapas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/TouchPicking/PickMasterPercent">Percentual de Separação</a>
+                                    </li>
+                                    <li>
+                                        <a href="/TouchPicking/PickMap">Mapa de separação</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/TouchPicking/MapBreak">Quebra de Mapas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/TouchPicking/UsuariosHabilitados">Usuário Habilitado para Sep. Peso</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/separacao/relatorio-separacao">Relatorio Separação</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/separacao/remuneracao-variavel/tipo-tarefa">Tipos Tarefa Remuneração Variável</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/separacao/remuneracao-variavel/relatorio-rateio">Relatório Remuneração Variável</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/saida/carregamento">Configurações do Carregamento</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/saida/ocorrencias-conferencia">Relatório de Ocorrências Conferências</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/separacao/remuneracao-variavel/aplicar-penalidade">Aplicar Penalidade</a>
+                                    </li>
+                                    <li>
+                                        <a href="/TouchPicking/OcorrenciaSeparacaoPeso">Ocorrencias da Separação por Peso</a>
+                                    </li>
+                                    <li>
+                                        <a href="/TouchPicking/RegraSeparacao">Regra separação</a>
+                                    </li>
+                                    <li>
+                                        <a href="/TouchPicking/Classificacao">Classificação</a>
+                                    </li>
+
+                                    <li class="parent">
+                                        <a href="javascript:;">
+                                            <span>Configurações</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="/TouchPicking/ConfiguracoesSeparacao/Read">Configurações da Remuneração Variável</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/saida/separacao/blitz/configuracao">Configuração Conferência - Blitz</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/separacao/configuracao-separacao">Configuração da Separação</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-building-o"></i>
+                                    <span>Relatórios</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="/Relatorios/BloqueioEstoque">Estoque Bloqueado</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Relatorios/DataValidade">Data de Validade</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa  fa-spinner"></i>
+                                    <span>Histórico </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="/Management/TransactionLogOld">Rastreabilidade</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/Management/Occurrences">Ocorrências</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Messages/Messages">Mensagens</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Shipping/LoadingTime">Gráfico Detalhes de Separação</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-exchange"></i>
+                                    <span>Integração</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="/Integrations/ReadIntegrations">Histórico</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Integrations/AreaPorTipoEndereco">Area por tipo de endereço</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/integracoes/configuracao/las">Configurações LAS</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/app#/integracoes/inventario-eletronico/configuracoes">Configuração Integração IE</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/app#/integracoes/cargo-gente-gestao-perfil">Cargo Gente Gestão Para Perfil</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-gears"></i>
+                                    <span>Configurações</span>
+                                </a>
+                                <ul class="sub-menu" style="display: none;">
+                                    <li>
+                                        <a href="/Settings/Profiles">Perfis</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/Menus">Menus</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/UnitsOfMeasurements">Unidades de medida</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/Processes">Cadastro de Processos</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/ProcessesConfigurations">Configuração de Processos</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/Configurations">Cadastro de Configurações</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/ConfigurationsValues">Configurações</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/RelationDockStage">Relação Stage x Doca</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/TaskInterleaving">Task Interleaving</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/Settings/Items">Itens</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/Locations">Endereços</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/Motivos">Motivos</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Management/Operation">Operações</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/configuracoes/associacao-operacao-tipo-produto">Vincular Operação com Tipo Produto</a>
+                                    </li>
+                                    <li class="parent">
+                                        <a href="#">
+                                            <span>Notificações</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="/app#/notificacoes/gerenciar-mensagens">Gerenciar mensagens</a>
+                                            </li>
+                                            <li>
+                                                <a href="/app#/notificacoes/relatorio-mensagens-enviadas">Relatório de mensagens enviadas</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-gear"></i>
+                                    <span>Cadastros</span>
+                                </a>
+                                <ul class="sub-menu" style="display: none;">
+                                    <li>
+                                        <a href="/Settings/Warehouses">Armazém</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/PickArea">Áreas de Separação</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/ConferenciaPeso">Balança</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/ProductClasses">Classes de Produtos</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Management/Cliente">Clientes</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/ProductFamilys">Família</a>
+                                    </li>
+                                    <li>
+                                        <a href="/BillOfMaterials/BillOfMaterialsHeader">Lista Técnica de Produtos</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/inventario/rota">Rota</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/Zones">Regiões</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/ProductSegments">Segmento</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/Carriers">Transportadoras</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/cadastros/tipo-endereco">Tipos de Endereços</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Settings/Users">Usuários</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Management/Vehicle">Veículo</a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-wifi"></i>
+                                    <span>RTLS</span>
+                                </a>
+                                <ul class="sub-menu" style="display: none;">
+                                    <li>
+                                        <a href="/app#/rtls/vincular-usuario-tag">Vinculuar usuários e tags</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/rtls/simulador">Simulador RTLS</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/rtls/historico-eventos">Histórico de Eventos</a>
+                                    </li>
+                                    <li>
+                                        <a href="/app#/rtls/configuracoes-rtls">Configurações</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li class="parent">
+                                <a href="#">
+                                    <i class="fa fa-tachometer"></i>
+                                    <span>Cockpit</span>
+                                </a>
+                                <ul class="sub-menu" style="display: none;">
+                                    <li>
+                                        <a href="/app#/cockpit/configuracao-cockpit">Configurações do Cockpit</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-right collapse-button" style="padding: 7px 9px;">
+                    <button id="sidebar-collapse" class="btn btn-default" style="">
+                        <i style="color: #fff;" class="fa fa-angle-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="pcont">
+
+            <!-- NOTIFICADOR -->
+            <div id="notificador"></div>
+
+            <!-- TOP NAVBAR -->
+            <div id="head-nav" class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right user-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" id="btnVerificarNotificacoes">
+                                    <i class="fa fa-weixin" style="font-size: x-large; color: #B8B8B8"></i>
+                                    <span></span>
+                                    <b class="caret"></b>
+                                </a>
+                            </li>
+                            <li class="dropdown profile_menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img alt="Avatar" src="/Content/images/blank-avatar-small.jpg">
+                                    <span>admin</span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="/SignOut">Sair</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav not-nav">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Right Chat-->
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right side-chat">
+        <div class="header">
+            <h3>Chat</h3>
+        </div>
+        <div class="sub-header" href="#">
+            <div class="icon">
+                <i class="fa fa-user"></i>
+            </div>
+            <p>Online (4)</p>
+        </div>
+        <div class="content">
+            <p class="title">Family</p>
+            <ul class="nav nav-pills nav-stacked contacts">
+                <li class="online">
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Michael Smith</a>
+                </li>
+                <li class="online">
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> John Doe</a>
+                </li>
+                <li class="online">
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Richard Avedon</a>
+                </li>
+                <li class="busy">
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Allen Collins</a>
+                </li>
+            </ul>
+
+            <p class="title">Friends</p>
+            <ul class="nav nav-pills nav-stacked contacts">
+                <li class="online">
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Jaime Garzon</a>
+                </li>
+                <li class="outside">
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Dave Grohl</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Victor Jara</a>
+                </li>
+            </ul>
+
+            <p class="title">Work</p>
+            <ul class="nav nav-pills nav-stacked contacts">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Ansel Adams</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Gustavo Cerati</a>
+                </li>
+            </ul>
+        </div>
+        <div id="chat-box">
+            <div class="header">
+                <span>Richard Avedon</span>
+                <a class="close">
+                    <i class="fa fa-times"></i>
+                </a>
+            </div>
+            <div class="messages nano nscroller has-scrollbar">
+                <div class="content" tabindex="0" style="right: -17px;">
+                    <ul class="conversation">
+                        <li class="odd">
+                            <p>Hi Jane, how are you?</p>
+                        </li>
+                        <li class="text-right">
+                            <p>Hello I was looking for you</p>
+                        </li>
+                        <li class="odd">
+                            <p>Tell me what you need?</p>
+                        </li>
+                        <li class="text-right">
+                            <p>Sorry, I'm late... see you</p>
+                        </li>
+                        <li class="odd unread">
+                            <p>OK, call me later...</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pane" style="display: none;">
+                    <div class="slider" style="height: 20px; top: 0px;"></div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter a message...">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loading-mask" class="loading-mask">
+        <div style="position: absolute; top: 45%; width: 100%;">
+            Carregando
+            <br>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/Content/js/jquery.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.pushmenu/js/jPushMenu.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="/Content/js/knockout.js"></script>
+    <script type="text/javascript" src="/Content/js/moment/moment.min.js"></script>
+    <script type="text/javascript" src="/Content/js/behaviour/core.pt-br.js"></script>
+    <script type="text/javascript" src="/Content/js/behaviour/core.js?v=0.0.7"></script>
+    <script type="text/javascript" src="/Content/js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Content/js/pubsub/Pubsub-js.min.js"></script>
+    <script type="text/javascript" src="/Content/js/xmpp/strophe.min.js"></script>
+    <script type="text/javascript" src="/Content/js/xmpp/strophe.register.min.js"></script>
+    <script type="text/javascript" src="/Content/js/xmpp/strophe.muc.min.js"></script>
+    <script type="text/javascript" src="/Content/js/xmpp/ClienteXmpp.min.js"></script>
+    <script type="text/javascript" src="/Content/js/xmpp/NotificadorWeb.min.js"></script>
+    <script type="text/javascript" src="/Content/js/xmpp/ClienteNotificadorWeb.min.js"></script>
+    <script type="text/javascript" src="/Content/js/xmpp/PainelDeNotificacoes.min.js"></script>
+    <script type="text/javascript" src="/Content/js/menu-search.js"></script>
+
+
+    <a href="#" class="back-to-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</body>
+
+</html>
