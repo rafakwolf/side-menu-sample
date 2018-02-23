@@ -15,10 +15,18 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
-            modules: path.resolve(__dirname, './node_modules/')
+            modules: path.resolve(__dirname, './node_modules/'),
+            jquery: 'modules/jquery/dist/jquery.min'
         }        
     },
-    plugins: [new ExtractTextPlugin('app.css')],
+    plugins: [        
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
+        new ExtractTextPlugin('app.css')
+    ],
     module: {
         loaders: [
             {
