@@ -8,8 +8,7 @@ $(document).ready(function () {
 
             $('ul > li').each(function () {
                 var currentLiText = $(this).text().toUpperCase(),
-                    showCurrentLi = currentLiText.indexOf(searchText.toUpperCase()) !==
-                    -1;
+                    showCurrentLi = currentLiText.indexOf(searchText.toUpperCase()) !== -1;
 
                 $(this).toggle(showCurrentLi);
             });
